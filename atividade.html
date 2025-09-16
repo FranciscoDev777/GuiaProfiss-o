@@ -6,47 +6,55 @@
     <title>Feira de Profissões 2025</title>
 
     <style>
-        body{
-            background-color: #f5faff; /* Fundo da página */
-            font-family: Arial, sans-serif;
-        }
 
-        h1{
-            text-align: center; /* Centralizar título */
-            color: #1e2a55; /* Cor do título */
-        }
+    body{
+         background-color: #f5faff;
+          font-family: Arial, sans-serif;
+         }
 
-        a{
-            text-decoration: none;
-            color: #1e90ff; /* Cor dos links */
-        }
-        a:hover{
-            text-decoration: underline;
-        }
+    h1{ text-align:center; 
+        color:#1e2a55;
+     }
 
-        ul{list-style-type: disc;}
-        ol{list-style-type: decimal;}
+    a{ text-decoration:none;
+       color:#1e90ff;
+     }
 
-        table{
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
-        }
+    a:hover{ text-decoration:underline; }
 
-        th, td{
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-        }
+    ul{ list-style-type: disc; }
 
-        th{
-            background-color: #1e90ff;
-            color: white;
-        }
+    ol{ list-style-type: decimal; }
 
-        tr:nth-child(even){
-            background-color: #f0f4ff; /* efeito zebra */
-        }
+    table{
+         width:80%; margin:20px auto; border-collapse:collapse;
+         }
+
+    th, td{
+         border:1px solid #ddd; padding:10px; text-align:center;
+         }
+
+    th{
+         background-color:#1e90ff; color:white;
+         }
+
+    tr:nth-child(even){
+         background-color:#f0f4ff;
+         }
+
+ 
+    .btn, button {
+      background-color:#1e90ff;
+      color:white;
+      border:none;
+      padding:10px 15px;
+      margin:5px;
+      border-radius:5px;
+      cursor:pointer;
+      font-size:14px;
+      text-decoration:none;
+      display:inline-block;
+    }
     </style>
 </head>
 <body>
@@ -54,13 +62,15 @@
     <h1>Feira de Profissões 2025</h1>
     <p style="text-align: center;">A Feira de Profissões 2025 tem como objetivo apresentar diferentes carreiras, 
     tirar dúvidas sobre o mercado de trabalho e ajudar os estudantes a descobrirem suas vocações.</p>
-
-    <!-- Links -->
-    <div style="text-align: center; margin-bottom: 20px;">
-        <a href="#programacao">Ir para Programação</a> |
-        <a href="https://querobolsa.com.br/teste-vocacional-gratis" target="_blank" rel="noopener noreferrer">Quero bolsa</a> |
-        <a href="programacao_palestras.pdf" download>Baixar Programa Oficial</a>
+    
+    <div style="margin-top:8px;">
+        <button type="button" onclick="location.hash='programacao'">Ir para Programação</button>
+        <button type="button" onclick="window.open('https://querobolsa.com.br/teste-vocacional-gratis','_blank')">Quero Bolsa</button>
+        <button type="button" onclick="location.href='programacao_palestras.pdf'">Baixar PDF</button>
+      </div>
     </div>
+  
+    
 
     <!-- Listas -->
     <h2>Profissões em Destaque</h2>
